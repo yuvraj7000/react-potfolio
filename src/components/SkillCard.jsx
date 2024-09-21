@@ -2,8 +2,8 @@ import React from "react";
 
 const SkillCard = ({ icon, name }) => (
   <div className="bg-gray-800  hover:bg-gray-700 transition duration-300 logo-out">
-    <div className="mb-4">{icon}</div>
-    <div className="">{name}</div>
+    <div className="logo">{icon}</div>
+    <div className="logo-name">{name}</div>
   </div>
 );
 

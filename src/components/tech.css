@@ -1,12 +1,11 @@
 .logo-out{
     
     height: 150px;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 40px;
+    
     border-radius: 20px;
     aspect-ratio: 1/1;
     margin: 20px;
@@ -20,7 +19,36 @@
    
     justify-content: center;
     align-items: center;
-    margin-bottom: 100px;
-    padding: 0px 100px;
+    margin-bottom: 10px;
+    padding-bottom: 100px 0px;
     flex-wrap: wrap;
+}
+@media (max-width: 1035px) {
+    .logo-out{
+    
+        height: 100px;
+        margin: 20px;
+        padding: 10px;
+    
+    }
+    .logo{
+        margin-bottom: 3px;
+    }
+    
+}
+
+@media (max-width: 500px){
+    .logo-name{
+        display: none;
+    }
+    .logo{
+        margin-bottom: 0px;
+    }
+    .logo-out{
+    
+        height: auto;
+        margin: 5px;
+        padding: 10px;
+    
+    }
 }
