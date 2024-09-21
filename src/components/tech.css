@@ -1,0 +1,26 @@
+.logo-out{
+    
+    height: 150px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    aspect-ratio: 1/1;
+    margin: 20px;
+
+}
+.logo{
+    aspect-ratio: 1/1;
+}
+.logo-container{
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    padding: 0px 100px;
+    flex-wrap: wrap;
+}
