@@ -7,6 +7,7 @@ import Skillsection from "./components/Skill";
 import ContactSection from "./components/Contact";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+import Reflection from "./components/Reflection";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
       <AboutSection />
       <Skillsection/>
       < TechSection />
+      <Reflection />
       <ProjectsSection />
       <ContactSection />
       <Footer />
