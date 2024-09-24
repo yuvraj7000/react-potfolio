@@ -2,7 +2,7 @@ import React from "react";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa"; // Importing icons for website and GitHub links
 import "./project.css";
 const ProjectCard = ({ title, description, image, website, github, tags }) => (
-  <div className="bg-gray-900 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 ease-in-out max-w-sm mx-auto">
+  <div className="bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 ease-in-out max-w-sm mx-auto ">
     {/* Image Section with Zoom Effect */}
     <div className="overflow-hidden">
       <img

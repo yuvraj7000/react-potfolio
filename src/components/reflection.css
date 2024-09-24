@@ -20,6 +20,12 @@
     
 }
 
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+
+
 .reflection-right {
     width: 40%;
     display: flex;
@@ -65,9 +71,7 @@
     padding-right: 15px;
     border-radius: 10px;
   }
-  .ref-tit{
 
-  }
   .ref-des{
     overflow: hidden;
     display: -webkit-box;
@@ -99,3 +103,6 @@
      }
 
   }
+
+
+  
