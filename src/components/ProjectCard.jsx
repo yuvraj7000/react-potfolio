@@ -25,7 +25,7 @@ const ProjectCard = ({ title, description, image, website, github, tags }) => (
             className={`tag`}
             style={{
               
-              color: `$`
+              color: `${tag.color}`,
             }}
           >
             #{tag.name}

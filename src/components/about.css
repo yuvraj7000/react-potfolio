@@ -1,32 +1,4 @@
-/* .box-con{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 100px;
-} */
-/* .box-out{
-    
-    padding: 30px;
-    border-radius: 100%;
-    height: 120%;
-    animation: rotate 8s linear infinite;
-
-} */
-/* .box-in{
-    border: 2px solid #000;
-    height: 40px;   
-    border-radius: 100%;
-    aspect-ratio: 1/1;
-    translate: -150%;
-} */
-/* @keyframes rotate {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  } */
+@import url('https://fonts.cdnfonts.com/css/agustina');
    .animation-container {
     min-height: 300px;
     /* height: 500px; */
@@ -71,4 +43,145 @@
         width: 100%;
     }
   }
+  .head{
+    height: 30vh;
+    max-height: 240px;
+  }
+  .about{
+    margin-top: 20px;
   
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 570px;
+  }
+  .signature{
+    font-family: 'Agustina', sans-serif;
+    text-transform: capitalize;
+    font-size: 30px;
+
+  }
+
+  .para{
+    text-align: justify;
+    padding-right: 20px;
+    font-family: "Kanit", sans-serif;
+    color: rgb(171, 171, 191);
+  }
+  @media (max-width: 1030px) {
+    
+    .head{
+      max-height: none;
+      height: auto;
+    }
+    .about{
+      max-height: none;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .para{
+      padding: 0px;
+    }
+  }
+
+  @media (max-width: 410px){
+  .signature{
+    font-size: 20px;
+  }
+  .about{
+    margin-top: 0px;
+  }
+  }
+
+  .hed-main{
+    
+    font-family: "Poppins", sans-serif;
+    color: #f6d8d5;
+    font-size: 1000px;
+  }
+.hed{
+  font-family: "Poppins", sans-serif;
+  color: #f6d8d5;
+  font-size: 1000px;
+}
+
+
+  @keyframes animate{
+    0%, 100%{
+      top: -7px;
+      left: 0;
+      opacity: 1;
+    }
+    20%{
+      top: 0;
+      left: -10px;
+      opacity: 0.7;
+    }
+    40%{
+      top: 7px;
+      left: 0;
+      opacity: 0.2;
+    }
+    60%{
+      top: 0;
+      left: 10px;
+      opacity: 0.3;
+    }
+    80%{
+      top: 0;
+      left: 0;
+      opacity: 0.9;
+    }
+  }
+  
+
+  
+  .h1 {
+    color: hsl(0, 0%, 96%);
+    font-size: 40px;
+    font-weight: bold;
+    /* font-family: poppins; */
+    font-family: "Playpen Sans", cursive;
+    letter-spacing: 7px;
+    cursor: pointer;
+    padding-bottom: 10px;
+  }
+  
+  .h1 span {
+    transition: 0.5s ease-out;
+  }
+  .dd{
+    display: inline-block;
+  }
+  .animee{
+    border-right: 5px solid #FFD700;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    
+    animation: typing 2s ,cursor .4s  step-end infinite alternate;
+  
+  }
+.anime{
+  border-right: 5px solid #FFD700;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  
+  animation: typing 2s ,cursor .4s  step-end infinite alternate;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+@keyframes cursor{
+  50%{
+    border-color: transparent;
+  }
+}
+@keyframes typing{
+  from{
+    width: 0;
+  }
+}

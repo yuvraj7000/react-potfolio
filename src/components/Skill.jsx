@@ -4,9 +4,13 @@ import { techanimation } from '../assets/animation';
 
 const Skillsection = () => {
   return (
-    <section id="contact" className="bg-gray-900 ">
+    <section id="skills" className="bg-gray-900 ">
       <div className="container mx-auto px-4">
-      <h3 className="text-3xl font-bold  text-center skill-name pt-20 pb-1">My Skills</h3>
+      <div className="flex justify-center pt-20">
+          <div className="dd">
+            <p className="text-4xl font-bold mb-10 text-center anime">My Skills</p>
+          </div>
+        </div>
     
     <div className="container flex justify-between items-center bg-gray-900 skill-container">
      

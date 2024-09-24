@@ -28,9 +28,11 @@ export default function Reflection() {
   return (
     <section id="reflections" className="bg-gray-900 py-20">
       <div className="container mx-auto px-4">
-        <h3 className="text-4xl font-bold mb-9 text-center text-white">
-          Reflections
-        </h3>
+      <div className="flex justify-center">
+          <div className="dd">
+            <p className="text-4xl font-bold mb-10 text-center anime">Reflections</p>
+          </div>
+        </div>
         <div className="reflection-container">
           {/* Reflection Cards Section */}
           <div className="reflection-left">
