@@ -16,7 +16,7 @@ import "./tech.css";
 
 const  TechSection = () => {
   return (
-    <section id="skills" className=" pt-20">
+    <section id="skills" className=" pt-20 py-20">
       <div className="container mx-auto px-4">
         <h3 className="text-3xl font-bold mb-12 text-center">My Tech Stack</h3>
         <div className="logo-container">

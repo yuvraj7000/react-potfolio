@@ -1,29 +1,156 @@
-import React from "react";
+
+
+
+
+
+
+import React, { useState, useEffect } from "react";
 import ProjectCard from "./ProjectCard";
+import "./project.css";
+import { GrFormNext } from "react-icons/gr";
+import { IoIosArrowBack } from "react-icons/io";
+
+const projectData = [
+  {
+    title: "Portfolio Website",
+    description: "A personal portfolio website to showcase my projects, skills, and experience. Built with React and Tailwind CSS, the site is fully responsive and includes animations.",
+    image: "https://via.placeholder.com/300x200",
+    website: "https://yourwebsite.com",
+    github: "https://github.com/yourgithub",
+    tags: [{ name: "React", color: "blue" }, { name: "HTML", color: "red" }, { name: "CSS", color: "green" }, { name: "Tailwind", color: "teal" }],
+  },
+  {
+    title: "Portfolio Website",
+    description: "A personal portfolio website to showcase my projects, skills, and experience. Built with React and Tailwind CSS, the site is fully responsive and includes animations.",
+    image: "https://via.placeholder.com/300x200",
+    website: "https://yourwebsite.com",
+    github: "https://github.com/yourgithub",
+    tags: [{ name: "React", color: "blue" }, { name: "HTML", color: "red" }, { name: "CSS", color: "green" }, { name: "Tailwind", color: "teal" }],
+  },
+  {
+    title: "Portfolio Website",
+    description: "A personal portfolio website to showcase my projects, skills, and experience. Built with React and Tailwind CSS, the site is fully responsive and includes animations.",
+    image: "https://via.placeholder.com/300x200",
+    website: "https://yourwebsite.com",
+    github: "https://github.com/yourgithub",
+    tags: [{ name: "React", color: "blue" }, { name: "HTML", color: "red" }, { name: "CSS", color: "green" }, { name: "Tailwind", color: "teal" }],
+  },
+  {
+    title: "Portfolio Website",
+    description: "A personal portfolio website to showcase my projects, skills, and experience. Built with React and Tailwind CSS, the site is fully responsive and includes animations.",
+    image: "https://via.placeholder.com/300x200",
+    website: "https://yourwebsite.com",
+    github: "https://github.com/yourgithub",
+    tags: [{ name: "React", color: "blue" }, { name: "HTML", color: "red" }, { name: "CSS", color: "green" }, { name: "Tailwind", color: "teal" }],
+  },
+  {
+    title: "Portfolio Website",
+    description: "A personal portfolio website to showcase my projects, skills, and experience. Built with React and Tailwind CSS, the site is fully responsive and includes animations.",
+    image: "https://via.placeholder.com/300x200",
+    website: "https://yourwebsite.com",
+    github: "https://github.com/yourgithub",
+    tags: [{ name: "React", color: "blue" }, { name: "HTML", color: "red" }, { name: "CSS", color: "green" }, { name: "Tailwind", color: "teal" }],
+  },
+  {
+    title: "Portfolio Website",
+    description: "A personal portfolio website to showcase my projects, skills, and experience. Built with React and Tailwind CSS, the site is fully responsive and includes animations.",
+    image: "https://via.placeholder.com/300x200",
+    website: "https://yourwebsite.com",
+    github: "https://github.com/yourgithub",
+    tags: [{ name: "React", color: "blue" }, { name: "HTML", color: "red" }, { name: "CSS", color: "green" }, { name: "Tailwind", color: "teal" }],
+  },
+  {
+    title: "Portfolio Website",
+    description: "A personal portfolio website to showcase my projects, skills, and experience. Built with React and Tailwind CSS, the site is fully responsive and includes animations.",
+    image: "https://via.placeholder.com/300x200",
+    website: "https://yourwebsite.com",
+    github: "https://github.com/yourgithub",
+    tags: [{ name: "React", color: "blue" }, { name: "HTML", color: "red" }, { name: "CSS", color: "green" }, { name: "Tailwind", color: "teal" }],
+  },
+  {
+    title: "Portfolio Website",
+    description: "A personal portfolio website to showcase my projects, skills, and experience. Built with React and Tailwind CSS, the site is fully responsive and includes animations.",
+    // image: "https://via.placeholder.com/300x200",
+    website: "https://yourwebsite.com",
+    github: "https://github.com/yourgithub",
+    tags: [{ name: "React", color: "blue" }, { name: "HTML", color: "red" }, { name: "CSS", color: "green" }, { name: "Tailwind", color: "teal" }],
+  },
+  // ... (other project objects)
+];
+
 
 const ProjectsSection = () => {
+  const [index, setIndex] = useState(0);
+  const [animate, setAnimate] = useState("fade-in");
+  const itemsPerPage = 3;
+
+  // Function to handle "Next" button click
+  const next = () => {
+    if (index + itemsPerPage < projectData.length) {
+      setAnimate("fade-out");
+      setTimeout(() => {
+        setIndex(index + itemsPerPage);
+        setAnimate("fade-in");
+      }, 500); // Duration matches the CSS animation duration
+    }
+  };
+
+  // Function to handle "Back" button click
+  const back = () => {
+    if (index - itemsPerPage >= 0) {
+      setAnimate("fade-out");
+      setTimeout(() => {
+        setIndex(index - itemsPerPage);
+        setAnimate("fade-in");
+      }, 500); // Duration matches the CSS animation duration
+    }
+  };
+
+  useEffect(() => {
+    setAnimate("fade-in"); // Initial load animation
+  }, []);
+
   return (
     <section id="projects" className="container mx-auto py-20 px-4">
       <h3 className="text-3xl font-bold mb-12 text-center">Featured Projects</h3>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <ProjectCard 
-          title="E-commerce Platform"
-          description="A full-stack e-commerce solution with user authentication, product management, and payment integration."
-          image="https://images.unsplash.com/photo-1553729459-efe14ef6055d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
-        />
-        <ProjectCard 
-          title="Task Management App"
-          description="A collaborative task management tool with real-time updates and team communication features."
-          image="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=872&q=80"
-        />
-        <ProjectCard 
-          title="Social Media Dashboard"
-          description="An analytics dashboard for social media managers with data visualization and reporting tools."
-          image="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=815&q=80"
-        />
+        {projectData.slice(index, index + itemsPerPage).map((project, idx) => (
+          <div key={idx} className={animate}>
+          <ProjectCard
+            key={idx}
+            title={project.title}
+            description={project.description}
+            image={project.image}
+            website={project.website}
+            github={project.github}
+            tags={project.tags}
+          />
+          </div>
+        ))}
+      </div>
+      <div className="flex items-center justify-center mt-8 space-x-4">
+        <button
+          onClick={back}
+          disabled={index === 0}
+          className={`flex items-center py-2 px-4 bg-gray-800 text-white rounded ${index === 0 ? "opacity-50 cursor-not-allowed" : "hover:bg-gray-700"}`}
+        >
+          {/* <img src="/path/to/back-icon.svg" alt="Back" className="w-4 h-4 mr-2" /> */}
+          Back
+        
+        </button>
+        <button
+          onClick={next}
+          disabled={index + itemsPerPage >= projectData.length}
+          className={`flex items-center py-2 px-4 bg-gray-800 text-white rounded ${index + itemsPerPage >= projectData.length ? "opacity-50 cursor-not-allowed" : "hover:bg-gray-700"}`}
+        >
+          {/* <img src="/path/to/next-icon.svg" alt="Next" className="w-4 h-4 mr-2" /> */}
+        
+          Next
+        </button>
       </div>
     </section>
   );
 };
 
 export default ProjectsSection;
+
