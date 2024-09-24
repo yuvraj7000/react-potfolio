@@ -2,55 +2,22 @@
 
 
 
-
-
+import narcoticsImage from "../assets/narcotics.png";
 import React, { useState, useEffect } from "react";
 import ProjectCard from "./ProjectCard";
 import "./project.css";
-import { GrFormNext } from "react-icons/gr";
-import { IoIosArrowBack } from "react-icons/io";
+
 
 const projectData = [
   {
-    title: "Portfolio Website",
-    description: "A personal portfolio website to showcase my projects, skills, and experience. Built with React and Tailwind CSS, the site is fully responsive and includes animations.",
-    image: "https://via.placeholder.com/300x200",
-    website: "https://yourwebsite.com",
-    github: "https://github.com/yourgithub",
-    tags: [{ name: "React", color: "blue" }, { name: "HTML", color: "red" }, { name: "CSS", color: "green" }, { name: "Tailwind", color: "teal" }],
+    title: "Narcotics Crypto Web Panel",
+    description: "A web panel for a Narcotics agency of india to view, manage and track suspected cryptocurrency transaction.  || username-admin || password-admin123",
+    image: narcoticsImage,
+    website: "https://narcotics-crypto-panel.vercel.app/",
+    github: "https://github.com/yuvraj7000raju/narcotics_crypto_panel",
+    tags: [{ name: "React", color: "orange" }, { name: "HTML", color: "red" }, { name: "CSS", color: "yellow" }, { name: "Tailwind", color: "pink" }],
   },
-  {
-    title: "Portfolio Website",
-    description: "A personal portfolio website to showcase my projects, skills, and experience. Built with React and Tailwind CSS, the site is fully responsive and includes animations.",
-    image: "https://via.placeholder.com/300x200",
-    website: "https://yourwebsite.com",
-    github: "https://github.com/yourgithub",
-    tags: [{ name: "React", color: "blue" }, { name: "HTML", color: "red" }, { name: "CSS", color: "green" }, { name: "Tailwind", color: "teal" }],
-  },
-  {
-    title: "Portfolio Website",
-    description: "A personal portfolio website to showcase my projects, skills, and experience. Built with React and Tailwind CSS, the site is fully responsive and includes animations.",
-    image: "https://via.placeholder.com/300x200",
-    website: "https://yourwebsite.com",
-    github: "https://github.com/yourgithub",
-    tags: [{ name: "React", color: "blue" }, { name: "HTML", color: "red" }, { name: "CSS", color: "green" }, { name: "Tailwind", color: "teal" }],
-  },
-  {
-    title: "Portfolio Website",
-    description: "A personal portfolio website to showcase my projects, skills, and experience. Built with React and Tailwind CSS, the site is fully responsive and includes animations.",
-    image: "https://via.placeholder.com/300x200",
-    website: "https://yourwebsite.com",
-    github: "https://github.com/yourgithub",
-    tags: [{ name: "React", color: "blue" }, { name: "HTML", color: "red" }, { name: "CSS", color: "green" }, { name: "Tailwind", color: "teal" }],
-  },
-  {
-    title: "Portfolio Website",
-    description: "A personal portfolio website to showcase my projects, skills, and experience. Built with React and Tailwind CSS, the site is fully responsive and includes animations.",
-    image: "https://via.placeholder.com/300x200",
-    website: "https://yourwebsite.com",
-    github: "https://github.com/yourgithub",
-    tags: [{ name: "React", color: "blue" }, { name: "HTML", color: "red" }, { name: "CSS", color: "green" }, { name: "Tailwind", color: "teal" }],
-  },
+  
   {
     title: "Portfolio Website",
     description: "A personal portfolio website to showcase my projects, skills, and experience. Built with React and Tailwind CSS, the site is fully responsive and includes animations.",
