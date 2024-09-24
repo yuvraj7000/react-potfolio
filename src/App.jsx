@@ -12,7 +12,7 @@ import Reflection from "./components/Reflection";
 const App = () => {
   return (
     // <div className="bg-gradient-to-r from-blue-500 to-purple-600 min-h-screen text-white max-w-9xl">
-     /* // <div className="bg-gradient-to-r from-blue-900 to-black min-h-screen text-white"> */
+     // <div className="bg-gradient-to-r from-blue-900 to-black min-h-screen text-white">  
 
 
 <div className="bg-gradient-to-r from-gray-500 via-gray-700 to-black min-h-screen text-white max-w-9xl">
