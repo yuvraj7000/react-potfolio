@@ -1,44 +1,41 @@
-/* Card Container */
+
 .project-card {
-    background-color: #1a202c; /* Darker background */
-    border: 1px solid #4a5568; /* Border for contrast */
+    background-color: #1a202c; 
+    border: 1px solid #4a5568; 
   }
   
-  /* Zoom-in effect for image */
+  
   .project-card img:hover {
     transform: scale(1.1);
   }
   
-  /* Hover effect for card */
+  
   .project-card:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Deeper shadow */
-    transform: scale(1.05); /* Scale up */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); 
+    transform: scale(1.05); 
   }
   
-  /* Button Styles */
+
   .project-card button {
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
   }
   
   .project-card button:hover {
-    transform: translateY(-3px); /* Slight lift on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transform: translateY(-3px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
   }
-/* Add these styles to your reflection.css or global stylesheet */
+
 .tag {
     display: inline-block;
-    margin: 0 5px 5px 0; /* Margin between tags */
-    padding: 5px 10px; /* Padding inside tags */
-    border-radius: 9999px; /* Full rounded corners */
-    font-size: 0.875rem; /* Font size */
-    font-weight: 600; /* Bold text */
-    text-transform: uppercase; /* Uppercase text */
+    margin: 0 5px 5px 0; 
+    padding: 5px 10px; 
+    border-radius: 9999px; 
+    font-size: 0.875rem; 
+    font-weight: 600; 
+    text-transform: uppercase; 
   }
     
 
-  /* Add these keyframe animations to project.css */
-
-/* Add keyframe animations for fading in and out */
 @keyframes fadeIn {
     from {
       opacity: 0;
@@ -61,7 +58,7 @@
     }
   }
   
-  /* Add utility classes for fade-in and fade-out animations */
+
   .fade-in {
     animation: fadeIn 0.5s ease-in-out forwards;
   }

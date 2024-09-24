@@ -3,7 +3,7 @@ import { FaExternalLinkAlt, FaGithub } from "react-icons/fa"; // Importing icons
 import "./project.css";
 const ProjectCard = ({ title, description, image, website, github, tags }) => (
   <div className="bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 ease-in-out max-w-sm mx-auto ">
-    {/* Image Section with Zoom Effect */}
+
     <div className="overflow-hidden">
       <img
         src={image}
@@ -12,12 +12,12 @@ const ProjectCard = ({ title, description, image, website, github, tags }) => (
       />
     </div>
 
-    {/* Content Section */}
+
     <div className="p-6">
       <h4 className="text-2xl font-bold mb-3 text-white">{title}</h4>
       <p className="mb-6 text-gray-400">{description}</p>
 
-      {/* Tags Section */}
+
       <div className="flex flex-wrap gap-2 mb-4">
         {tags.map((tag, index) => (
           <span
@@ -33,7 +33,7 @@ const ProjectCard = ({ title, description, image, website, github, tags }) => (
         ))}
       </div>
 
-      {/* Links Section */}
+     
       <div className="flex items-center space-x-4">
         <a
           href={website}

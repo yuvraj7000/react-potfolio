@@ -5,15 +5,15 @@ const ReflectionCard = ({ title, content, onReadMore, onReadLess }) => {
 
   const toggleExpansion = () => {
     if (isExpanded) {
-      onReadLess(); // Call onReadLess when collapsing the card
+      onReadLess(); 
     } else {
-      onReadMore(); // Call onReadMore when expanding the card
+      onReadMore(); 
     }
-    setIsExpanded(!isExpanded); // Toggle the isExpanded state
+    setIsExpanded(!isExpanded); 
   };
 
   return (
-    <div className="bg-gray-800 text-white  shadow-lg max-w-lg w-full transform hover:scale-105 transition duration-300 ease-in-out my-2 ref-con">
+    <div className="bg-gray-800 text-white  shadow-lg transform hover:scale-105 transition duration-300 ease-in-out my-2 ref-con">
       <h2 className="text-2xl font-semibold text-yellow-400 mb-3 ref-tit">{title}</h2>
       <p className={`text-gray-300 mb-3 ref-des`}>
         {content}

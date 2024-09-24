@@ -75,7 +75,7 @@ const projectData = [
     github: "https://github.com/yourgithub",
     tags: [{ name: "React", color: "blue" }, { name: "HTML", color: "red" }, { name: "CSS", color: "green" }, { name: "Tailwind", color: "teal" }],
   },
-  // ... (other project objects)
+  
 ];
 
 
@@ -84,30 +84,29 @@ const ProjectsSection = () => {
   const [animate, setAnimate] = useState("fade-in");
   const itemsPerPage = 3;
 
-  // Function to handle "Next" button click
   const next = () => {
     if (index + itemsPerPage < projectData.length) {
       setAnimate("fade-out");
       setTimeout(() => {
         setIndex(index + itemsPerPage);
         setAnimate("fade-in");
-      }, 500); // Duration matches the CSS animation duration
+      }, 500); 
     }
   };
 
-  // Function to handle "Back" button click
+  
   const back = () => {
     if (index - itemsPerPage >= 0) {
       setAnimate("fade-out");
       setTimeout(() => {
         setIndex(index - itemsPerPage);
         setAnimate("fade-in");
-      }, 500); // Duration matches the CSS animation duration
+      }, 500); 
     }
   };
 
   useEffect(() => {
-    setAnimate("fade-in"); // Initial load animation
+    setAnimate("fade-in"); 
   }, []);
 
   return (
@@ -138,7 +137,7 @@ const ProjectsSection = () => {
           disabled={index === 0}
           className={`flex items-center py-2 px-4 bg-gray-800 text-white rounded ${index === 0 ? "opacity-50 cursor-not-allowed" : "hover:bg-gray-700"}`}
         >
-          {/* <img src="/path/to/back-icon.svg" alt="Back" className="w-4 h-4 mr-2" /> */}
+          
           Back
         
         </button>
@@ -147,7 +146,7 @@ const ProjectsSection = () => {
           disabled={index + itemsPerPage >= projectData.length}
           className={`flex items-center py-2 px-4 bg-gray-800 text-white rounded ${index + itemsPerPage >= projectData.length ? "opacity-50 cursor-not-allowed" : "hover:bg-gray-700"}`}
         >
-          {/* <img src="/path/to/next-icon.svg" alt="Next" className="w-4 h-4 mr-2" /> */}
+         
         
           Next
         </button>

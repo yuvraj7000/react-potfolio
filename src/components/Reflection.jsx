@@ -7,7 +7,7 @@ import { useState } from "react";
 
 export default function Reflection() {
   const [selectedReflection, setSelectedReflection] = useState(null);
-  const [startIndex, setStartIndex] = useState(0); // State to manage the starting index of displayed reflections
+  const [startIndex, setStartIndex] = useState(0); 
 
   const reflections = [
     {
@@ -27,26 +27,25 @@ export default function Reflection() {
       content: `I've built several practice projects to gain confidence in web development, including fun and interactive games like <span class="text-red-500">Sino Game</span> and <span class="text-green-500">Tic-Tac-Toe</span> using HTML, CSS, and JavaScript. I also experimented with replicating the <span class="text-blue-500">Flipkart frontend</span> and created <span class="text-purple-500">TodoList applications</span>, with the advanced version built in <span class="text-orange-500">React</span> to enhance my skills in dynamic user interfaces. <br/> You can see this Projects - <br/><a href="https://www.linkedin.com/posts/yuvraj-yadav-1b7984259_webdevelopment-html-css-activity-7179427392661143552-uUYT?utm_source=share&utm_medium=member_desktop" target="_blank" class="text-blue-400 underline">see projects</a><br/><a href="https://www.linkedin.com/posts/yuvraj-yadav-1b7984259_react-redux-statemanagement-activity-7182824674769203200-sBfY?utm_source=share&utm_medium=member_desktop" target="_blank" class="text-blue-400 underline">ToDo React app</a>`
 
     },
-    // Add more reflections if needed
+
   ];
 
   const reflectionsPerPage = 3;
   const totalReflections = reflections.length;
 
-  // Calculate the reflections to display based on the startIndex
+ 
   const displayedReflections = reflections.slice(
     startIndex,
     startIndex + reflectionsPerPage
   );
 
-  // Handle "Next" button click
+
   const handleNext = () => {
     if (startIndex + reflectionsPerPage < totalReflections) {
       setStartIndex(startIndex + reflectionsPerPage);
     }
   };
 
-  // Handle "Back" button click
   const handleBack = () => {
     if (startIndex - reflectionsPerPage >= 0) {
       setStartIndex(startIndex - reflectionsPerPage);
@@ -65,7 +64,7 @@ export default function Reflection() {
         </div>
 
         <div className="reflection-container">
-          {/* Reflection Cards Section */}
+         
           <div className="reflection-left">
             {displayedReflections.map((reflection, index) => (
               <ReflectionCard
@@ -77,7 +76,7 @@ export default function Reflection() {
               />
             ))}
 
-            {/* Back and Next Buttons */}
+          
             <div className="flex justify-between mt-6">
             <button
   className={`flex items-center justify-center text-yellow-500 border border-yellow-500 px-4 py-2 rounded hover:bg-yellow-500 hover:text-white transition duration-200 ${
@@ -106,7 +105,7 @@ export default function Reflection() {
             </div>
           </div>
 
-          {/* Animation Section */}
+         
           <div className="reflection-right">
             {selectedReflection ? (
               <div className="bg-gray-800 p-6 shadow-lg text-white right-text">

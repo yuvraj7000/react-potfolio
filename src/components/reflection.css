@@ -70,6 +70,9 @@
     padding-left: 15px;
     padding-right: 15px;
     border-radius: 10px;
+    width: 100%;
+    max-width: 32rem; 
+
   }
 
   .ref-des{
@@ -79,6 +82,12 @@
     -webkit-line-clamp: 1;
   }
   
+  @media (max-width: 450px){
+    .ref-con{
+      width: 90vw;
+    }
+  }
+
   @media (max-width: 777px){
     .reflection-container{
         flex-direction: column;

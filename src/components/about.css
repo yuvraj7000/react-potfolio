@@ -88,9 +88,7 @@
   }
 
   @media (max-width: 410px){
-  .signature{
-    font-size: 20px;
-  }
+  
   .about{
     margin-top: 0px;
   }
