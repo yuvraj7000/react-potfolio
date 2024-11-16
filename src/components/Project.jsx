@@ -8,40 +8,40 @@ import ProjectCard from "./ProjectCard";
 import "./project.css";
 
 
-const projectData = [
+const projectData = [  
   {
-    title: "Narcotics Crypto Web Panel",
-    description: "A web panel for a Narcotics agency of india to view, manage and track suspected cryptocurrency transaction.  || username-admin || password-admin123",
+    title: "BlogWave",
+    description: "A full-stack blogging platform with all essential features and a user dashboard for content management. || Guest login: username-guest || Password: guest123 || <a href='/' style='text-decoration: underline;'>more details</a>",
+    image: "https://via.placeholder.com/300x200",
+    website: "https://yourwebsite.com",
+    github: "https://github.com/yourgithub",
+    tags: [{ name: "MERN", color: "orange" }, { name: "Cloud", color: "green" }, { name: "JWT", color: "pink" }, { name: "REST API", color: "teal" }],
+  },
+  {
+    title: "CodeDeck",
+    description: " A platform to sell programming courses and templates with an admin panel, add-to-cart, and dark mode. || admin login: username-admin || Password: admin123 || <a href='/' style='text-decoration: underline;'>more details</a>",
+    image: "https://via.placeholder.com/300x200",
+    website: "https://yourwebsite.com",
+    github: "https://github.com/yourgithub",
+    tags: [{ name: "MERN", color: "blue" }, { name: "stripe", color: "yellow" }, { name: "emails", color: "green" }, { name: "cloud", color: "orange" }],
+  },
+  {
+    title: "CodeCraft",
+    description: "An online code editor that supports multiple programming languages.  Enabled real-time code execution by integrating an external API.  <a href='/' style='text-decoration: underline;'>more details</a>",
+    image: "https://via.placeholder.com/300x200",
+    website: "https://yourwebsite.com",
+    github: "https://github.com/yourgithub",
+    tags: [{ name: "React", color: "orange" }, { name: "API", color: "teal" }, { name: "axios", color: "pink" }, { name: "code", color: "green" }],
+  },
+  {
+    title: "Practice Projects",
+    description: "Games like Sino Game and Tic-Tac-Toe using HTML, CSS, and JavaScript. I also experimented with replicating the Flipkart frontend and created TodoList applications. <a href='/' style='text-decoration: underline;'>more details</a>",
     image: narcoticsImage,
     website: "https://narcotics-crypto-panel.vercel.app/",
     github: "https://github.com/yuvraj7000raju/narcotics_crypto_panel",
-    tags: [{ name: "React", color: "orange" }, { name: "HTML", color: "red" }, { name: "CSS", color: "yellow" }, { name: "Tailwind", color: "pink" }],
+    tags: [{ name: "web", color: "orange" }, { name: "HTML", color: "teal" }, { name: "CSS", color: "yellow" }, { name: "javascript", color: "pink" }],
   },
   
-  {
-    title: "Portfolio Website",
-    description: "A personal portfolio website to showcase my projects, skills, and experience. Built with React and Tailwind CSS, the site is fully responsive and includes animations.",
-    image: "https://via.placeholder.com/300x200",
-    website: "https://yourwebsite.com",
-    github: "https://github.com/yourgithub",
-    tags: [{ name: "React", color: "blue" }, { name: "HTML", color: "red" }, { name: "CSS", color: "green" }, { name: "Tailwind", color: "teal" }],
-  },
-  {
-    title: "Portfolio Website",
-    description: "A personal portfolio website to showcase my projects, skills, and experience. Built with React and Tailwind CSS, the site is fully responsive and includes animations.",
-    image: "https://via.placeholder.com/300x200",
-    website: "https://yourwebsite.com",
-    github: "https://github.com/yourgithub",
-    tags: [{ name: "React", color: "blue" }, { name: "HTML", color: "red" }, { name: "CSS", color: "green" }, { name: "Tailwind", color: "teal" }],
-  },
-  {
-    title: "Portfolio Website",
-    description: "A personal portfolio website to showcase my projects, skills, and experience. Built with React and Tailwind CSS, the site is fully responsive and includes animations.",
-    // image: "https://via.placeholder.com/300x200",
-    website: "https://yourwebsite.com",
-    github: "https://github.com/yourgithub",
-    tags: [{ name: "React", color: "blue" }, { name: "HTML", color: "red" }, { name: "CSS", color: "green" }, { name: "Tailwind", color: "teal" }],
-  },
   
 ];
 

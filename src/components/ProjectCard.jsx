@@ -15,7 +15,7 @@ const ProjectCard = ({ title, description, image, website, github, tags }) => (
 
     <div className="p-6">
       <h4 className="text-2xl font-bold mb-3 text-white">{title}</h4>
-      <p className="mb-6 text-gray-400">{description}</p>
+      <p className="mb-6 text-gray-400" dangerouslySetInnerHTML={{ __html: description }}></p>
 
 
       <div className="flex flex-wrap gap-2 mb-4">
@@ -51,6 +51,7 @@ const ProjectCard = ({ title, description, image, website, github, tags }) => (
         >
           <FaGithub className="mr-2" /> GitHub
         </a>
+  
       </div>
     </div>
   </div>
