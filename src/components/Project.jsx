@@ -6,13 +6,14 @@ import narcoticsImage from "../assets/narcotics.png";
 import React, { useState, useEffect } from "react";
 import ProjectCard from "./ProjectCard";
 import "./project.css";
-
-
+import codecraftImage from "../assets/codecraft.png";
+import blogwaveImage from "../assets/blogwave.png";
+import codedeckImage from "../assets/codedeck.png";
 const projectData = [  
   {
     title: "BlogWave",
     description: "A full-stack blogging platform with all essential features and a user dashboard for content management. || Guest login: username-guest || Password: guest123 || <a href='/' style='text-decoration: underline;'>more details</a>",
-    image: "https://via.placeholder.com/300x200",
+    image: blogwaveImage,
     website: "https://yourwebsite.com",
     github: "https://github.com/yourgithub",
     tags: [{ name: "MERN", color: "orange" }, { name: "Cloud", color: "green" }, { name: "JWT", color: "pink" }, { name: "REST API", color: "teal" }],
@@ -20,7 +21,7 @@ const projectData = [
   {
     title: "CodeDeck",
     description: " A platform to sell programming courses and templates with an admin panel, add-to-cart, and dark mode. || admin login: username-admin || Password: admin123 || <a href='/' style='text-decoration: underline;'>more details</a>",
-    image: "https://via.placeholder.com/300x200",
+    image: codedeckImage,
     website: "https://yourwebsite.com",
     github: "https://github.com/yourgithub",
     tags: [{ name: "MERN", color: "blue" }, { name: "stripe", color: "yellow" }, { name: "emails", color: "green" }, { name: "cloud", color: "orange" }],
@@ -28,7 +29,7 @@ const projectData = [
   {
     title: "CodeCraft",
     description: "An online code editor that supports multiple programming languages.  Enabled real-time code execution by integrating an external API.  <a href='/' style='text-decoration: underline;'>more details</a>",
-    image: "https://via.placeholder.com/300x200",
+    image: codecraftImage,
     website: "https://yourwebsite.com",
     github: "https://github.com/yourgithub",
     tags: [{ name: "React", color: "orange" }, { name: "API", color: "teal" }, { name: "axios", color: "pink" }, { name: "code", color: "green" }],
