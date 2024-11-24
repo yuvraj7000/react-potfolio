@@ -17,17 +17,17 @@ const Header = () => {
             </a>
           </li> */}
           <li>
-            <a href="#skills" className="hover:text-yellow-300 transition duration-300">
+            <a href="#skills" className="hover:text-yellow-300 transition duration-300 font-mono">
               Skills
             </a>
           </li>
           <li>
-            <a href="#projects" className="hover:text-yellow-300 transition duration-300">
+            <a href="#projects" className="hover:text-yellow-300 transition duration-300 font-mono">
               Projects
             </a>
           </li>
           <li>
-            <a href="#contact" className="hover:text-yellow-300 transition duration-300">
+            <a href="#contact" className="hover:text-yellow-300 transition duration-300 font-mono">
               Contact
             </a>
           </li>
@@ -48,10 +48,10 @@ const Header = () => {
         </h1>
 
         <div className="flex space-x-4">
-          <a href="https://github.com/yuvraj7000raju" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/yuvraj7000" target="_blank" rel="noopener noreferrer">
             <FaGithub className="text-2xl hover:text-yellow-300 transition duration-300" />
           </a>
-          <a href="https://www.linkedin.com/in/yuvraj-yadav-1b7984259/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/yuvraj7000" target="_blank" rel="noopener noreferrer">
             <FaLinkedin className="text-2xl hover:text-yellow-300 transition duration-300" />
           </a>
           <a href="mailto:yuvraj7000raju@gmail.com">

@@ -9,37 +9,57 @@ import "./project.css";
 import codecraftImage from "../assets/codecraft.png";
 import blogwaveImage from "../assets/blogwave.png";
 import codedeckImage from "../assets/codedeck.png";
+import practice from "../assets/practice.jpg";
+import har from "../assets/har.png";
+import ecop from "../assets/ecop.png";
+
 const projectData = [  
   {
     title: "BlogWave",
     description: "A full-stack blogging platform with all essential features and a user dashboard for content management. || Guest login: username-guest || Password: guest123 || <a href='/' style='text-decoration: underline;'>more details</a>",
     image: blogwaveImage,
-    website: "https://yourwebsite.com",
-    github: "https://github.com/yourgithub",
+    website: "https://blogwaveapp.vercel.app",
+    github: "https://github.com/yuvraj7000/bloging-website-backend",
     tags: [{ name: "MERN", color: "orange" }, { name: "Cloud", color: "green" }, { name: "JWT", color: "pink" }, { name: "REST API", color: "teal" }],
   },
   {
     title: "CodeDeck",
     description: " A platform to sell programming courses and templates with an admin panel, add-to-cart, and dark mode. || admin login: username-admin || Password: admin123 || <a href='/' style='text-decoration: underline;'>more details</a>",
     image: codedeckImage,
-    website: "https://yourwebsite.com",
-    github: "https://github.com/yourgithub",
-    tags: [{ name: "MERN", color: "blue" }, { name: "stripe", color: "yellow" }, { name: "emails", color: "green" }, { name: "cloud", color: "orange" }],
+    website: "https://codedeckapp.vercel.app",
+    github: "https://github.com/yuvraj7000/online-course-template",
+    tags: [{ name: "MERN", color: "pink" }, { name: "stripe", color: "yellow" }, { name: "emails", color: "green" }, { name: "cloud", color: "orange" }],
+  },
+  {
+    title: "HAR Model",
+    description: "Human Action Recognition, a CNN-based model to classify human activities into 15 categories and deployed it in a Flask app for real-time predictions with 85% accuracy. <a href='/' style='text-decoration: underline;'>details</a>",
+    image: har,
+    website: "https://github.com/yuvraj7000/web-implementation-human-action-recognization",
+    github: "https://github.com/yuvraj7000/human-action-recognition-model",
+    tags: [{ name: "cnn", color: "orange" }, { name: "flask", color: "teal" }, { name: "ml", color: "yellow" }, { name: "datascience", color: "pink" }],
   },
   {
     title: "CodeCraft",
     description: "An online code editor that supports multiple programming languages.  Enabled real-time code execution by integrating an external API.  <a href='/' style='text-decoration: underline;'>more details</a>",
     image: codecraftImage,
-    website: "https://yourwebsite.com",
-    github: "https://github.com/yourgithub",
+    website: "https://codecraftapp.vercel.app",
+    github: "https://github.com/yuvraj7000/web-code-editor",
     tags: [{ name: "React", color: "orange" }, { name: "API", color: "teal" }, { name: "axios", color: "pink" }, { name: "code", color: "green" }],
+  },
+  {
+    title: "eCopStation",
+    description: "Built an FIR management portal for police stations using the MERN stack, streamlining case record tracking and improving efficiency. || all passwords = 'ecop' || <a href='/' style='text-decoration: underline;'>more details</a>",
+    image: ecop,
+    website: "https://ecopstationapp.vercel.app/",
+    github: "https://github.com/yuvraj7000/police-station-management",
+    tags: [{ name: "react", color: "orange" }, { name: "MERN", color: "teal" }, { name: "node", color: "yellow" }, { name: "web", color: "pink" }],
   },
   {
     title: "Practice Projects",
     description: "Games like Sino Game and Tic-Tac-Toe using HTML, CSS, and JavaScript. I also experimented with replicating the Flipkart frontend and created TodoList applications. <a href='/' style='text-decoration: underline;'>more details</a>",
-    image: narcoticsImage,
-    website: "https://narcotics-crypto-panel.vercel.app/",
-    github: "https://github.com/yuvraj7000raju/narcotics_crypto_panel",
+    image: practice,
+    website: "https://www.linkedin.com/posts/yuvraj7000_webdevelopment-html-css-activity-7179427392661143552-IxBg?utm_source=share&utm_medium=member_desktop",
+    github: "https://github.com/yuvraj7000",
     tags: [{ name: "web", color: "orange" }, { name: "HTML", color: "teal" }, { name: "CSS", color: "yellow" }, { name: "javascript", color: "pink" }],
   },
   

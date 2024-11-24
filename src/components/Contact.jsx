@@ -1,8 +1,24 @@
 
-import React from "react";
+import React,{useState} from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const ContactSection = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value
+    });
+  };
+
+
+
   return (
     <section id="contact" className="bg-gray-900 py-20  text-white">
       <div className="container mx-auto px-4">
@@ -15,31 +31,49 @@ const ContactSection = () => {
           I am always open to discussing new projects, creative ideas, or
           opportunities to be part of your vision. Feel free to reach out!
         </p>
-        <form className="w-full max-w-lg mx-auto mb-10">
+        <form 
+        action="https://formspree.io/f/xanydbba"
+        method="POST"
+        className="w-full max-w-lg mx-auto mb-10">
           <div className="mb-3">
-            <input
-              type="text"
-              placeholder="Your Name"
-              className="w-full p-4 rounded-lg bg-gray-800 border border-gray-600 focus:outline-none focus:border-yellow-400"
-            />
-          </div>
-          <div className="mb-3">
-            <input
-              type="email"
-              placeholder="Your Email"
-              className="w-full p-4 rounded-lg bg-gray-800 border border-gray-600 focus:outline-none focus:border-yellow-400"
-            />
-          </div>
-          <div className="mb-3">
-            <textarea
-              placeholder="Your Message"
-              className="w-full p-4 rounded-lg bg-gray-800 border border-gray-600 focus:outline-none focus:border-yellow-400"
-              rows="6"
-            ></textarea>
-          </div>
-          <button className="bg-yellow-400 text-gray-900 py-3 px-6 rounded-full font-bold hover:bg-yellow-300 transition duration-300">
-            Send Message
-          </button>
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            value={formData.name}
+            onChange={handleChange}
+            className="w-full p-4 rounded-lg bg-gray-800 border border-gray-600 focus:outline-none focus:border-yellow-400"
+            required
+          />
+        </div>
+        <div className="mb-3">
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            value={formData.email}
+            onChange={handleChange}
+            className="w-full p-4 rounded-lg bg-gray-800 border border-gray-600 focus:outline-none focus:border-yellow-400"
+            required
+          />
+        </div>
+        <div className="mb-3">
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            value={formData.message}
+            onChange={handleChange}
+            className="w-full p-4 rounded-lg bg-gray-800 border border-gray-600 focus:outline-none focus:border-yellow-400"
+            rows="6"
+            required
+          ></textarea>
+        </div>
+        <button
+          type="submit"
+          className="bg-yellow-400 text-gray-900 py-3 px-6 rounded-full font-bold hover:bg-yellow-300 transition duration-300"
+        >
+          Send
+        </button>
         </form>
         <div className="flex justify-center items-center space-x-8">
           <a

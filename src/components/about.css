@@ -171,7 +171,7 @@
   
   animation: typing 2s ,cursor .4s  step-end infinite alternate;
   animation-timeline: view();
-  animation-range: entry 0% cover 40%;
+  animation-range: entry 0% cover 50%;
 }
 @keyframes cursor{
   50%{
