@@ -77,7 +77,7 @@ const ContactSection = () => {
         </form>
         <div className="flex justify-center items-center space-x-8">
           <a
-            href="https://github.com/yuvraj7000raju"
+            href="https://github.com/yuvraj7000"
             target="_blank"
             rel="noopener noreferrer"
             className="text-3xl hover:text-yellow-400 transition duration-300"
@@ -85,7 +85,7 @@ const ContactSection = () => {
             <FaGithub />
           </a>
           <a
-            href="https://www.linkedin.com/in/yuvraj-yadav-1b7984259/"
+            href="https://www.linkedin.com/in/yuvraj7000"
             target="_blank"
             rel="noopener noreferrer"
             className="text-3xl hover:text-yellow-400 transition duration-300"

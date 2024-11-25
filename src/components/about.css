@@ -183,3 +183,19 @@
     width: 0;
   }
 }
+.nmain{
+  margin-bottom: 80px;
+}
+@media (max-width: 400px){
+.hmain{
+  display: none;
+}
+.lmain{
+  width: 100vw;
+  justify-content: space-around;
+}
+.nmain{
+  margin-bottom: 40px;
+  color: rgb(171, 171, 191);
+}
+}

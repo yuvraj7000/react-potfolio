@@ -18,7 +18,7 @@ const ProjectCard = ({ title, description, image, website, github, tags }) => (
       <p className="mb-6 text-gray-400" dangerouslySetInnerHTML={{ __html: description }}></p>
 
 
-      <div className="flex flex-wrap gap-2 mb-4">
+      <div className="flex justify-between mb-4">
         {tags.map((tag, index) => (
           <span
             key={index}

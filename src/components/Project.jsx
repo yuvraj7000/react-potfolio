@@ -20,7 +20,7 @@ const projectData = [
     image: blogwaveImage,
     website: "https://blogwaveapp.vercel.app",
     github: "https://github.com/yuvraj7000/bloging-website-backend",
-    tags: [{ name: "MERN", color: "orange" }, { name: "Cloud", color: "green" }, { name: "JWT", color: "pink" }, { name: "REST API", color: "teal" }],
+    tags: [{ name: "MERN", color: "orange" }, { name: "Cloud", color: "green" }, { name: "JWT", color: "pink" }, { name: "REST_API", color: "teal" }],
   },
   {
     title: "CodeDeck",

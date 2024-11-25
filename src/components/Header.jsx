@@ -6,16 +6,12 @@ const Header = () => {
   return (
     <header className="container mx-auto py-8 px-4 head">
       
-      <nav className="flex justify-between items-center">
+      <nav className="flex justify-between items-center nmain">
       
-        <h1 className=" signature">Yuvraj Yadav</h1>
+        <h1 className=" signature hmain">Yuvraj Yadav</h1>
        
-        <ul className="flex space-x-6 font-medium font-poppins ">
-          {/* <li>
-            <a href="#about" className="hover:text-yellow-300 transition duration-300">
-              About
-            </a>
-          </li> */}
+        <ul className="flex space-x-6 font-medium font-poppins lmain">
+        
           <li>
             <a href="#skills" className="hover:text-yellow-300 transition duration-300 font-mono">
               Skills
@@ -36,7 +32,7 @@ const Header = () => {
 
       </nav>
       
-      <div className="text-center mt-20 flex items-center justify-center flex-col">
+      <div className="text-center flex items-center justify-center flex-col ymain">
 
         <h1 className="h1">
          <span style={{
