@@ -46,7 +46,7 @@ const TechSection = () => {
       title: "Version Control",
       skills: [
         { icon: <FaGit className="text-4xl" />, name: "Git", hoverColor: "hover:text-orange-600" },
-        { icon: <FaGithub className="text-4xl" />, name: "GitHub", hoverColor: "hover:text-gray-800" },
+        { icon: <FaGithub className="text-4xl" />, name: "GitHub", hoverColor: "hover:text-green-800" },
       ]
     },
     {
