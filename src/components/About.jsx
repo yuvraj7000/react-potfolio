@@ -18,7 +18,7 @@ const AboutSection = () => {
         <div className="dd"><p className={`text-3xl font-bold mb-4 animee`}>
       About Me
     </p></div>
-          <p className="text-lg mb-6 para">"Hello! I'm a passionate full-stack web developer with a specialization in the MERN stack. My skill set extends beyond web development to include web penetration testing, data structures and algorithms (DSA), Python, and Linux. I thrive on creating innovative solutions and constantly seeking to broaden my expertise in technology. Whether it's building robust applications or optimizing algorithms, I am driven by the challenge of turning complex problems into elegant, efficient solutions."</p>
+          <p className="text-lg mb-6 para">"I’m a Full-Stack Web Developer with expertise in the MERN stack, Django, and PostgreSQL, currently pursuing a B.Tech in Artificial Intelligence and Data Science at MITS Gwalior. I build scalable web applications and intuitive mobile apps using React Native. With a solid foundation in Data Structures and Algorithms (C++), I’m also skilled in Linux, and my interests extend to Machine Learning and Data Science. I'm passionate about solving real-world problems through technology and constantly pushing my boundaries as a developer."</p>
           <button className="bg-yellow-400 text-gray-900 py-2 px-6 rounded-full font-bold hover:bg-yellow-300 transition duration-300" ><a href='#projects'>Projects</a></button>
           <button className="bg-yellow-400 text-gray-900 mx-2 py-2 px-6 rounded-full font-bold hover:bg-yellow-300 transition duration-300"><a href='https://drive.google.com/file/d/1tZA1lN3V8vqqsqT2K-YSNNn8kWrCDkav/view?usp=sharing'>Resume</a></button>
         </div>

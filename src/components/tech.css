@@ -37,6 +37,13 @@
     
 }
 
+@media (max-width: 800px){
+    .sec{
+        width: 100%;
+    }
+}
+
+
 @media (max-width: 500px){
     .logo-name{
         display: none;
@@ -51,4 +58,45 @@
         padding: 10px;
     
     }
+    .sec{
+        width: 100%;
+    }
+}
+/* .logo:hover{
+    transform: scale(1.5);
+    transition: all 0.3s ease;
+} */
+.hov:hover{
+    .logo{
+        transform: scale(1.4);
+        transition: all 0.3s ease;
+    }
+    .tex{
+        transform: scale(1.1);
+        transition: all 0.3s ease;
+    }
+
+}
+.sec:hover{
+   border: 1px solid #ffcc14;
+    transition: all 0.3s ease;
+    .tit{
+           transform: scale(1.1);
+        transition: all 0.3s ease;
+        color:#ffcc14;
+    }
+}
+.sec{
+    border-radius: 10px;
+   border: 1px solid grey;
+   
+
+}
+.tex{
+      font-family: "Kanit", sans-serif;
+        /* color: rgb(171, 171, 191); */
+}
+.tit{
+    /* color: #eaba0f; */
+    color: white;
 }

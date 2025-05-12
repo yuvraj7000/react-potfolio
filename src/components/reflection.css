@@ -1,5 +1,7 @@
 
-
+.des{
+    font-family: "Kanit", sans-serif;
+}
 .reflection-container {
     display: flex;
     flex-direction: row;

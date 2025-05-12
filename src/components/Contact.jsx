@@ -1,6 +1,7 @@
 
 import React,{useState} from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import "./reflection.css"
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -27,7 +28,7 @@ const ContactSection = () => {
             <p className="text-4xl font-bold mb-10 text-center anime">Contact Me</p>
           </div>
         </div>
-        <p className="text-center text-lg mb-5">
+        <p className="text-center text-lg mb-5 des text-gray-400">
           I am always open to discussing new projects, creative ideas, or
           opportunities to be part of your vision. Feel free to reach out!
         </p>

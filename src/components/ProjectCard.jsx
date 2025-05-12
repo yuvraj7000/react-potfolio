@@ -1,57 +1,68 @@
 import React from "react";
-import { FaExternalLinkAlt, FaGithub } from "react-icons/fa"; // Importing icons for website and GitHub links
+import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import "./project.css";
-const ProjectCard = ({ title, description, image, website, github, tags }) => (
-  <div className="bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 ease-in-out max-w-sm mx-auto ">
 
-    <div className="overflow-hidden">
+const ProjectCard = ({ title, description, image, website, github, tags }) => (
+  <div className="group bg-gray-900 rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 ease-out hover:-translate-y-2 relative h-full flex flex-col">
+
+    {/* Image Section with Gradient Overlay */}
+    <div className="relative overflow-hidden">
       <img
         src={image}
         alt={title}
-        className="w-full h-48 object-cover transition duration-300 transform hover:scale-110"
+        className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105"
       />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+      <h3 className="absolute bottom-0 left-0 right-0 text-2xl font-bold text-white p-4">
+        {title}
+      </h3>
     </div>
 
+    {/* Content Section */}
+    <div className="p-5 flex flex-col flex-grow">
+      {/* Description */}
+      <div 
+        className="mb-4 text-gray-400 leading-relaxed flex-grow des"
+        dangerouslySetInnerHTML={{ __html: description }}
+      />
 
-    <div className="p-6">
-      <h4 className="text-2xl font-bold mb-3 text-white">{title}</h4>
-      <p className="mb-6 text-gray-400" dangerouslySetInnerHTML={{ __html: description }}></p>
-
-
-      <div className="flex justify-between mb-4">
+      {/* Tags */}
+      <div className="flex flex-wrap gap-2 mb-5">
         {tags.map((tag, index) => (
           <span
             key={index}
-            className={`tag`}
+            className=" font-medium px-2.5 py-1 rounded-full"
             style={{
-              
-              color: `${tag.color}`,
+              backgroundColor: `${tag.color}20`,
+              color: tag.color,
+              border: `1px solid ${tag.color}40`
             }}
           >
-            #{tag.name}
+            {tag.name}
           </span>
         ))}
       </div>
 
-     
-      <div className="flex items-center space-x-4">
+      {/* Buttons */}
+      <div className="flex flex-col sm:flex-row gap-3 mt-auto">
         <a
           href={website}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center bg-blue-500 text-white px-4 py-2 rounded-full font-bold shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1"
+          className="flex items-center justify-center gap-2 w-full sm:w-auto px-4 py-2.5 text-sm font-medium text-blue-400 hover:text-white border border-blue-400/40 hover:border-blue-400 rounded-lg transition-all hover:bg-blue-400/10"
         >
-          <FaExternalLinkAlt className="mr-2" /> Website
+          <FaExternalLinkAlt className="flex-shrink-0" />
+          <span>Live Demo</span>
         </a>
         <a
           href={github}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center bg-gray-800 text-white px-4 py-2 rounded-full font-bold shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1"
+          className="flex items-center justify-center gap-2 w-full sm:w-auto px-4 py-2.5 text-sm font-medium text-gray-300 hover:text-white border border-gray-600 hover:border-gray-400 rounded-lg transition-all hover:bg-gray-800"
         >
-          <FaGithub className="mr-2" /> GitHub
+          <FaGithub className="flex-shrink-0" />
+          <span>Code</span>
         </a>
-  
       </div>
     </div>
   </div>
