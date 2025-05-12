@@ -20,7 +20,7 @@ const AboutSection = () => {
     </p></div>
           <p className="text-lg mb-6 para">"I’m a Full-Stack Web Developer with expertise in the MERN stack, Django, and PostgreSQL, currently pursuing a B.Tech in Artificial Intelligence and Data Science at MITS Gwalior. I build scalable web applications and intuitive mobile apps using React Native. With a solid foundation in Data Structures and Algorithms (C++), I’m also skilled in Linux, and my interests extend to Machine Learning and Data Science. I'm passionate about solving real-world problems through technology and constantly pushing my boundaries as a developer."</p>
           <button className="bg-yellow-400 text-gray-900 py-2 px-6 rounded-full font-bold hover:bg-yellow-300 transition duration-300" ><a href='#projects'>Projects</a></button>
-          <button className="bg-yellow-400 text-gray-900 mx-2 py-2 px-6 rounded-full font-bold hover:bg-yellow-300 transition duration-300"><a href='https://drive.google.com/file/d/1tZA1lN3V8vqqsqT2K-YSNNn8kWrCDkav/view?usp=sharing'>Resume</a></button>
+          <button className="bg-yellow-400 text-gray-900 mx-2 py-2 px-6 rounded-full font-bold hover:bg-yellow-300 transition duration-300"><a href='https://drive.google.com/file/d/19tybCTfgAfcvGmORP1ZFLzSZX-Hx7WEK/view?usp=sharing'>Resume</a></button>
         </div>
       </div>
 
