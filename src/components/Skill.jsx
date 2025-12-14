@@ -58,7 +58,7 @@ const Skillsection = () => {
                   />
                   <div>
                     <p className="text-lg font-medium">LeetCode <LuExternalLink className="inline-block ml-2 mb-2" /></p>
-                    <p className="text-sm text-gray-400 fonts">100+ Problems Solved</p>
+                    <p className="text-sm text-gray-400 fonts">150+ Problems Solved</p>
                   </div>
                 </a>
                 <a 
