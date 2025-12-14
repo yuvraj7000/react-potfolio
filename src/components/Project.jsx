@@ -14,7 +14,7 @@ import kisanbandhu from "../assets/kisanbandhu.png";
 const projectData = [  
   {
   title: "Kisan Bandhu",
-  description: "A farmer assistance mobile app offering plant disease detection, mandi price updates, weather forecasts, crop insights, and access to government/private schemes. </br> [ APP || Node Backend || Web Control Pannel || 1K+ ⬇ on ApkPure || <a href='https://blogwave.yuvrajyadav.tech/blog/681ad0827f3b1c5a03935ebe' style='text-decoration: underline;'>more details</a> ]",
+  description: "A farmer assistance mobile app offering plant disease detection, mandi price updates, weather forecasts, crop insights, and access to government/private schemes. </br> [ APP || Node Backend || Web Control Pannel || 1K+ ⬇ on ApkPure || <a href='https://blogwave.yuvraj.works/blog/681ad0827f3b1c5a03935ebe' style='text-decoration: underline;'>more details</a> ]",
   image: kisanbandhu,
   website: "https://apkpure.net/kisan-bandhu/com.AgriNext.KisanBandhu",
   github: "https://github.com/yuvraj7000/Farming-app",
@@ -28,9 +28,9 @@ const projectData = [
 ,
   {
   title: "LinkUp",
-  description: "A professional networking platform to share posts, build connections, chat privately, explore jobs, and more — all from a single dashboard. </br> Guest login -> User: guest || Password: guest123 || <a href='https://blogwave.yuvrajyadav.tech/blog/6821a3e837f5542208f0529b' style='text-decoration: underline;'>more details</a>",
+  description: "A professional networking platform to share posts, build connections, chat privately, explore jobs, and more — all from a single dashboard. </br> Guest login -> User: guest || Password: guest123 || <a href='https://blogwave.yuvraj.works/blog/6821a3e837f5542208f0529b' style='text-decoration: underline;'>more details</a>",
   image: linkup,
-  website: "https://linkup.yuvrajyadav.tech",
+  website: "https://linkup.yuvraj.works",
   github: "https://github.com/yuvraj7000/LinkUp-for-professionals-",
   tags: [
     { name: "MERN", color: "teal" },
@@ -41,9 +41,9 @@ const projectData = [
 },
   {
     title: "BlogWave",
-    description: "A full-stack blogging platform with all essential features and a user dashboard for content management. </br> Guest login -> User: guest || Password: guest123 || <a href='https://blogwave.yuvrajyadav.tech/blog/6818d4557f3b1c5a03935dcd' style='text-decoration: underline;'>more details</a>",
+    description: "A full-stack blogging platform with all essential features and a user dashboard for content management. </br> Guest login -> User: guest || Password: guest123 || <a href='https://blogwave.yuvraj.works/blog/6818d4557f3b1c5a03935dcd' style='text-decoration: underline;'>more details</a>",
     image: blogwaveImage,
-    website: "https://blogwave.yuvrajyadav.tech",
+    website: "https://blogwave.yuvraj.works",
     github: "https://github.com/yuvraj7000/bloging-website-backend",
     tags: [{ name: "MERN", color: "orange" }, { name: "Cloud", color: "green" }, { name: "JWT", color: "pink" }, { name: "REST API", color: "teal" }],
   },
@@ -51,7 +51,7 @@ const projectData = [
     title: "CodeDeck",
     description: " A platform to sell programming courses and templates with an admin panel, add-to-cart, and dark mode. || admin login -> Email: admin@gmail.com || Password: admin123",
     image: codedeckImage,
-    website: "https://codedeck.yuvrajyadav.tech",
+    website: "https://codedeck.yuvraj.works",
     github: "https://github.com/yuvraj7000/online-course-template",
     tags: [{ name: "MERN", color: "pink" }, { name: "Stripe", color: "yellow" }, { name: "NodeMailer", color: "green" }, { name: "Cloud", color: "orange" }],
   },
@@ -67,7 +67,7 @@ const projectData = [
     title: "CodeCraft",
     description: "An online code editor that supports multiple programming languages.  Enabled real-time code execution by integrating an external API.",
     image: codecraftImage,
-    website: "https://codecraft.yuvrajyadav.tech",
+    website: "https://codecraft.yuvraj.works",
     github: "https://github.com/yuvraj7000/web-code-editor",
     tags: [{ name: "React", color: "orange" }, { name: "API", color: "teal" }, { name: "Axios", color: "pink" }, { name: "Code", color: "green" }],
   },
@@ -75,7 +75,7 @@ const projectData = [
     title: "eCopStation",
     description: "Built an FIR management portal for police stations using the MERN stack, streamlining case record tracking and improving efficiency. || All Passwords = 'ecop'",
     image: ecop,
-    website: "https://ecop.yuvrajyadav.tech/",
+    website: "https://ecop.yuvraj.works/",
     github: "https://github.com/yuvraj7000/police-station-management",
     tags: [{ name: "React", color: "orange" }, { name: "MERN", color: "teal" }, { name: "Node", color: "yellow" }, { name: "Web Portal", color: "pink" }],
   },
@@ -119,3 +119,4 @@ const ProjectsSection = () => {
 };
 
 export default ProjectsSection;
+
