@@ -14,9 +14,9 @@ import kisanbandhu from "../assets/kisanbandhu.png";
 const projectData = [  
   {
   title: "Kisan Bandhu",
-  description: "A farmer assistance mobile app offering plant disease detection, mandi price updates, weather forecasts, crop insights, and access to government/private schemes. </br> [ APP || Node Backend || Web Control Pannel || 1K+ ⬇ on ApkPure || <a href='https://blogwave.yuvraj.rest/blog/681ad0827f3b1c5a03935ebe' style='text-decoration: underline;'>more details</a> ]",
+  description: "A farmer assistance mobile app offering plant disease detection, mandi price updates, weather forecasts, crop insights, and access to government/private schemes. </br> [ APP || Node Backend || Web Control Pannel || 1K+ downloads || <a href='https://blogwave.yuvraj.rest/blog/681ad0827f3b1c5a03935ebe' style='text-decoration: underline;'>more details</a> ]",
   image: kisanbandhu,
-  website: "https://apkpure.net/kisan-bandhu/com.AgriNext.KisanBandhu",
+  website: "https://play.google.com/store/apps/details?id=com.AgriNext.KisanBandhu&hl=en_IN",
   github: "https://github.com/yuvraj7000/Farming-app",
   tags: [
     { name: "React Native", color: "orange" },
